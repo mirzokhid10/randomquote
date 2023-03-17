@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import QuoaraApp from './Components/QuoraApp';
+import Bgimage from "./images/city.jpg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundImage: `url(${Bgimage})` }} className="App w-full h-[100vh] flex justify-center items-center bg-cover bg-repeat bg-center">
+      <QuoaraApp/>
     </div>
   );
 }
